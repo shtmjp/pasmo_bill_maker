@@ -101,7 +101,7 @@ def aggregate_same_route(df: pd.DataFrame) -> pd.DataFrame:
             g["arrival"].iloc[0],
         )
         date_str = convert_dates_to_str(dates)
-        arrow = "->" if g["category"].iloc[0] == "往復" else "->"
+        arrow = "<->" if g["category"].iloc[0] == "往復" else "->"
         route_str = f"電車（{dep}{arrow}{arr}）{category}"
 
         fee = g["fee"].sum()
