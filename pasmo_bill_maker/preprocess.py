@@ -4,15 +4,14 @@ from pasmo_bill_maker.utils import get_datetime
 
 
 def validate_raw_data(df: pd.DataFrame) -> None:
-    assert set(["月/日", "利用場所", "利用場所.1", "差額", "請求可否"]).issubset(
-        set(df.columns)
-    )
+    assert set(["月/日", "利用場所", "利用場所.1", "差額"]).issubset(set(df.columns))
 
 
 def preprocess(df: pd.DataFrame) -> pd.DataFrame:
     validate_raw_data(df)
     df["金額"] = -df["差額"]
-    df = df[df["請求可否"] == 1].copy()
+    if "請求可否" in df.columns:
+        df = df[df["請求可否"] == 1].copy()
     df["月/日"] = df["月/日"].apply(get_datetime)
     df.rename(
         columns={
