@@ -112,4 +112,4 @@ def aggregate_same_route(df: pd.DataFrame) -> pd.DataFrame:
                 "fee": fee,
             }
         )
-    return pd.DataFrame(results)
+    return pd.DataFrame(results).sort_values("date")
