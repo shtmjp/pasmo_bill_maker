@@ -1,9 +1,12 @@
 # pasmo_bill_maker
-入力した通勤/通学区間に基づいて、公式サイトで取得できるPASMO利用履歴を集計し、
-請求書に記載しやすい形式にする。
+### Before
+<img width="457" alt="スクリーンショット 2024-09-17 0 26 32" src="https://github.com/user-attachments/assets/4e1765d1-bd64-4a1c-8aad-010cb5204a38">
+### After
+<img width="341" alt="スクリーンショット 2024-09-17 0 22 43" src="https://github.com/user-attachments/assets/b0f52ecc-30bd-4a8b-9cfb-5f0d164cdc96">
 
 ## Get started
 ```
+git clone git@github.com:shtmjp/pasmo_bill_maker.git
 cd pasmo_bill_maker
 poetry install
 poetry run python3 exec.py
@@ -14,4 +17,11 @@ poetry run python3 exec.py
 2. 該当するデータを表示し、表を適当なExcelファイルに直接コピペする
    - \[月/日, 種別, 利用場所, 種別, 利用場所, 残額, 差額\]というカラムがあればOK。
    - シート名は'Sheet1'にしておく
-3. `poetry run python3 exec.py`を実行し、ファイルを投入する
+3.
+   ```
+   git clone git@github.com:shtmjp/pasmo_bill_maker.git
+   cd pasmo_bill_maker
+   poetry install
+   poetry run python3 exec.py
+   ```
+   し、コンソール上で指示に従う
