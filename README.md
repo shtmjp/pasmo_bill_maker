@@ -10,8 +10,7 @@
 2. 該当するデータを表示し、表を適当なExcelファイルに直接コピペする
    - \[月/日, 種別, 利用場所, 種別, 利用場所, 残額, 差額\]というカラムがあればOK。
    - シート名は'Sheet1'にしておく
-3.
-   ```
+3. ```
    git clone git@github.com:shtmjp/pasmo_bill_maker.git
    cd pasmo_bill_maker
    poetry install
