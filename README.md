@@ -1,6 +1,7 @@
 # pasmo_bill_maker
 ### Before
 <img width="457" alt="スクリーンショット 2024-09-17 0 26 32" src="https://github.com/user-attachments/assets/4e1765d1-bd64-4a1c-8aad-010cb5204a38">
+
 ### After
 <img width="341" alt="スクリーンショット 2024-09-17 0 22 43" src="https://github.com/user-attachments/assets/b0f52ecc-30bd-4a8b-9cfb-5f0d164cdc96">
 
