@@ -17,3 +17,7 @@
    poetry install
    poetry run python3 exec.py
    ```
+
+## TODO
+- Organize modules properly
+- Try pandera to validate dataframes
