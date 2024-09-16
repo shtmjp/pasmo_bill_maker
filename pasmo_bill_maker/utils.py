@@ -37,7 +37,7 @@ def find_first_and_last_index(lst: list[bool]) -> tuple:
     return first_index, last_index
 
 
-def convert_dates_to_str(dates):
+def convert_dates_to_str(dates) -> str:
     if not dates:
         return ""
 
