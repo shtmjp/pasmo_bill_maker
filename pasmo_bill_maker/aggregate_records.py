@@ -3,11 +3,6 @@ import pandas as pd
 from pasmo_bill_maker.utils import convert_dates_to_str, find_first_and_last_index
 
 
-def get_commute_route() -> list[tuple]:
-    # TODO: make some user interface
-    return [("平沼橋", "相鉄横浜"), ("横浜", "東京"), ("地　東京", "地本郷三")]
-
-
 def validate_dataframe(df: pd.DataFrame) -> None:
     assert set(df.columns) == set(["日付", "発", "着", "金額"])
     assert df["日付"].apply(type).eq(pd.Timestamp).all()
